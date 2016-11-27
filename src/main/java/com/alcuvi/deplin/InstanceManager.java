@@ -13,11 +13,16 @@ import com.alcuvi.deplin.rest.model.Instance;
 @Named
 public class InstanceManager {
 
-	private final InstanceRepository instanceRepository;
+	private InstanceRepository instanceRepository;
 
 	@Inject
 	public InstanceManager(final InstanceRepository instanceRepository) {
 		this.instanceRepository = instanceRepository;
+	}
+	
+	public void setInstanceRepository(final InstanceRepository instanceRepository){
+		this.instanceRepository = instanceRepository;
+		
 	}
 
 	public Collection<Instance> getAll() {

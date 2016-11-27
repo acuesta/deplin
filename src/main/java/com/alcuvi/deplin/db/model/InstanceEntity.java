@@ -1,9 +1,11 @@
 package com.alcuvi.deplin.db.model;
 
+import org.springframework.data.annotation.Id;
+
 
 public class InstanceEntity {
 	
-	@org.springframework.data.annotation.Id
+	@Id
 	private String name;
 	
 	private String description;
