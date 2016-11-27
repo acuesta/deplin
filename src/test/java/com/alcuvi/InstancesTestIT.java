@@ -18,9 +18,9 @@ import org.springframework.test.context.web.WebAppConfiguration;
 @SpringApplicationConfiguration(classes = DeplinApplication.class)
 @WebAppConfiguration
 @IntegrationTest("server.port:8080")
-public class InstancesItTest {
+public class InstancesTestIT {
 
-	final static Logger logger = Logger.getLogger(InstancesItTest.class);
+	final static Logger logger = Logger.getLogger(InstancesTestIT.class);
 
 	final static String SERVER = "http://localhost:8080";
 	final static String GET_INSTANCES_URL = SERVER + "/instances";
