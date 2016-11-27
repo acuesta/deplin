@@ -20,11 +20,6 @@ public class InstanceManager {
 		this.instanceRepository = instanceRepository;
 	}
 	
-	public void setInstanceRepository(final InstanceRepository instanceRepository){
-		this.instanceRepository = instanceRepository;
-		
-	}
-
 	public Collection<Instance> getAll() {
 
 		final Collection<Instance> allInstances = new ArrayList<>();
