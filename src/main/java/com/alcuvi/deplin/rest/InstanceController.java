@@ -16,7 +16,7 @@ import com.alcuvi.deplin.rest.model.Instance;
 
 @RestController
 @RequestMapping("/instances")
-public class InstancesController {
+public class InstanceController {
 	
 	@Inject
 	InstanceManager instanceManager;
